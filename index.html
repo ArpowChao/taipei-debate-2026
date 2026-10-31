@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 台北市長辯論會（蔣萬安 vs. 沈伯洋）原話對照與事實查核</title>
+  <meta name="description" content="2026年10月31日台北市長電視辯論會（YouTube: j4s2_44yHJE）完整原話對照、精簡版第三方事實查核與官方出處連結。" />
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --surface: #131b2e;
+      --surface-2: #1a2540;
+      --surface-3: #233152;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border: #2d3d63;
+      --blue: #60a5fa;
+      --blue-bg: rgba(59, 130, 246, 0.12);
+      --blue-border: rgba(59, 130, 246, 0.45);
+      --green: #34d399;
+      --green-bg: rgba(16, 185, 129, 0.12);
+      --green-border: rgba(16, 185, 129, 0.45);
+      --amber: #fbbf24;
+      --amber-bg: rgba(245, 158, 11, 0.14);
+      --red: #f87171;
+      --red-bg: rgba(239, 68, 68, 0.14);
+      --purple: #c084fc;
+      --purple-bg: rgba(168, 85, 247, 0.14);
+      --font-scale: 1.12;
+    }
+
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --surface-3: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #cbd5e1;
+      --blue: #1d4ed8;
+      --blue-bg: #eff6ff;
+      --blue-border: #93c5fd;
+      --green: #047857;
+      --green-bg: #ecfdf5;
+      --green-border: #6ee7b7;
+      --amber: #b45309;
+      --amber-bg: #fffbeb;
+      --red: #b91c1c;
+      --red-bg: #fef2f2;
+      --purple: #7e22ce;
+      --purple-bg: #faf5ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: calc(16px * var(--font-scale)); scroll-behavior: smooth; }
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding-bottom: 4rem;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(19, 27, 46, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.7rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    [data-theme="light"] .topbar { background: rgba(255, 255, 255, 0.92); }
+
+    .brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 800; font-size: 1.05rem; }
+    .brand-badge {
+      background: #ef4444;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    .controls { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; }
+    .btn {
+      background: var(--surface-2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.38rem 0.8rem;
+      border-radius: 0.5rem;
+      font-size: 0.86rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .btn:hover { background: var(--surface-3); border-color: var(--blue); text-decoration: none; }
+    .btn-primary { background: #2563eb; color: #fff; border-color: #2563eb; }
+    .btn-purple { background: #7e22ce; color: #fff; border-color: #7e22ce; }
+
+    .container { max-width: 1240px; margin: 0 auto; padding: 1.5rem; }
+
+    /* Hero */
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .hero-meta span { background: var(--surface-2); padding: 0.2rem 0.65rem; border-radius: 0.35rem; }
+    .hero h1 { font-size: 1.65rem; margin-bottom: 0.6rem; }
+    .hero p { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1.1rem; }
+
+    /* Video & Structure */
+    .media-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 900px) { .media-grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.2rem;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 0.6rem;
+      overflow: hidden;
+      background: #000;
+      margin: 0.6rem 0;
+    }
+    .video-wrapper iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+    .stage-list { list-style: none; display: grid; gap: 0.55rem; margin-top: 0.6rem; }
+    .stage-item {
+      background: var(--surface-2);
+      border-left: 3px solid var(--blue);
+      padding: 0.55rem 0.85rem;
+      border-radius: 0.4rem;
+      font-size: 0.9rem;
+    }
+    .stage-item strong { display: block; color: var(--text); }
+    .stage-item span { color: var(--text-muted); font-size: 0.85rem; }
+
+    /* Section & Filters */
+    .section-header {
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .section-header h2 { font-size: 1.4rem; }
+
+    .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .filter-btn {
+      background: var(--surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .filter-btn.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+    /* Tags & Source Pills */
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.18rem 0.55rem;
+      border-radius: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .tag-stage { background: var(--amber-bg); color: var(--amber); }
+    .tag-independent { background: var(--purple-bg); color: var(--purple); }
+    .tag-verdict { background: var(--red-bg); color: var(--red); font-size: 0.88rem; }
+    .tag-green { background: var(--green-bg); color: var(--green); }
+
+    .src-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+    .src-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.18rem 0.6rem;
+      border-radius: 0.35rem;
+      font-size: 0.8rem;
+      color: var(--blue);
+      font-weight: 600;
+    }
+    .src-pill:hover {
+      background: var(--surface-3);
+      border-color: var(--blue);
+      text-decoration: none;
+    }
+
+    /* Fact-Check Cards */
+    .case-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+    .case-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .case-header {
+      background: var(--surface-2);
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .case-title { font-size: 1.12rem; font-weight: 800; }
+
+    .case-body {
+      padding: 1.25rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 900px) { .case-body { grid-template-columns: 1fr; } }
+
+    .quote-box { border-radius: 0.65rem; padding: 1rem; font-size: 0.95rem; }
+    .quote-blue { background: var(--blue-bg); border: 1px solid var(--blue-border); }
+    .quote-green { background: var(--green-bg); border: 1px solid var(--green-border); }
+    .quote-speaker {
+      font-weight: 800;
+      font-size: 0.88rem;
+      margin-bottom: 0.45rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    blockquote {
+      padding-left: 0.75rem;
+      border-left: 3px solid currentColor;
+    }
+
+    /* Ultra-Concise Fact-Check Box */
+    .check-panel {
+      grid-column: 1 / -1;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 0.65rem;
+      padding: 1rem 1.25rem;
+      display: grid;
+      gap: 0.65rem;
+    }
+    .check-row {
+      display: grid;
+      grid-template-columns: 135px 1fr;
+      gap: 0.75rem;
+      align-items: baseline;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 640px) { .check-row { grid-template-columns: 1fr; gap: 0.25rem; } }
+    .check-label { font-weight: 800; color: var(--text-muted); font-size: 0.86rem; }
+    .check-content ul { padding-left: 1.15rem; }
+    .check-content li { margin-bottom: 0.25rem; }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left; }
+    th, td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { background: var(--surface-2); font-weight: 800; white-space: nowrap; }
+    tr:last-child td { border-bottom: none; }
+
+    /* AI Box */
+    .ai-box {
+      background: var(--surface);
+      border: 2px solid var(--purple);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .prompt-textarea {
+      width: 100%;
+      height: 280px;
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.85rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      line-height: 1.55;
+      margin-top: 0.85rem;
+    }
+    .toast {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: #059669;
+      color: #fff;
+      padding: 0.65rem 1.1rem;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      z-index: 999;
+    }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-badge">附完整出處版</span>
+      <span>2026 台北市長辯論會：原話對照 ＆ 獨立查核</span>
+    </div>
+    <div class="controls">
+      <button class="btn" onclick="adjustFont(-0.1)">字體 A-</button>
+      <button class="btn" onclick="resetFont()">標準 A</button>
+      <button class="btn btn-primary" onclick="adjustFont(0.12)">放大 A+</button>
+      <button class="btn" onclick="toggleTheme()">☀️/🌙 主題</button>
+      <a class="btn btn-purple" href="#ai-review-zone">🤖 複製給 AI 評論</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-meta">
+        <span>📅 2026/10/31 12:00–14:00</span>
+        <span>📺 TVBS ＆ 三立主辦</span>
+        <span>👥 蔣萬安（藍）vs. 沈伯洋（綠）</span>
+      </div>
+      <h1>2026 台北市長電視辯論會：原話逐字對照 ＆ 假數據拆解</h1>
+      <p>完整保留雙方<strong>現場原話</strong>，並附上每一項原話與查核數據之<strong>官方新聞稿／媒體逐字稿出處連結</strong>。</p>
+      <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+        <a href="#core-factchecks" class="btn btn-primary">🔍 8 大爭點查核</a>
+        <a href="#nine-questions" class="btn">📋 蔣萬安「9連問」查核表</a>
+        <a href="#full-verbatim" class="btn">🎙️ 申論與結論原話</a>
+        <a href="#source-index" class="btn">🔗 全部出處連結總表</a>
+        <button class="btn btn-purple" onclick="copyForAI()">📋 一鍵複製給其他 AI 評論</button>
+      </div>
+    </section>
+
+    <section class="media-grid">
+      <div class="card">
+        <h3>📺 辯論會直播原片（<a href="https://www.youtube.com/live/j4s2_44yHJE" target="_blank" rel="noopener">YouTube 原始連結 ↗</a>）</h3>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/j4s2_44yHJE" title="2026台北市長候選人電視辯論會" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="card">
+        <h3>⏱️ 四階段流程速覽</h3>
+        <ul class="stage-list">
+          <li class="stage-item">
+            <strong>1. 政見申論（各 8 分鐘｜沈先、蔣後）</strong>
+            <span>沈提 AI 整理 1999 與百日三件事（種樹、兒虐、廢廚餘秤重）；蔣細數大巨蛋、輝達、鮮奶等政績。</span>
+          </li>
+          <li class="stage-item">
+            <strong>2. 交叉詰問＋追問（共 8 題｜每題 5 分半）</strong>
+            <span>激戰內湖都更與松機航高、7599 動工數、市長會議出席率、蔣 9 連問 vs. 沈反咬雙城論壇、約加 LINE 再辯一場。</span>
+          </li>
+          <li class="stage-item">
+            <strong>3. 媒體提問（TVBS 樊啓明、三立 黃彥怡）</strong>
+            <span>問「4 年後台北市民的一天」與「都更防震」。蔣低頭唸稿稱 2030 南北環完工；沈提家庭一站通與東京三階段都更。</span>
+          </li>
+          <li class="stage-item">
+            <strong>4. 結論（各 6 分鐘｜蔣先、沈後）</strong>
+            <span>蔣謝柯文哲、批沈雙標；沈稱「數據只是溫度計，非體感溫度」、引蔡康永名言作結。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8 Core Fact Checks -->
+    <section id="core-factchecks">
+      <div class="section-header">
+        <h2>🔍 八大爭點：影片原話、精簡查核 ＆ 出處連結</h2>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterCases('all', this)">全部 (8)</button>
+        <button class="filter-btn" onclick="filterCases('chiang', this)">🔵 查核蔣萬安 (4)</button>
+        <button class="filter-btn" onclick="filterCases('shen', this)">🟢 查核沈伯洋 (4)</button>
+      </div>
+
+      <div class="case-grid">
+
+        <!-- 01 -->
+        <article class="case-card" data-target="both">
+          <div class="case-header">
+            <div class="case-title">爭點 01｜內湖 12 里都更卡關 vs.「7599 專案動工數是 0」</div>
+            <div>
+              <span class="tag tag-stage">⚡ 場上互打</span>
+              <span class="tag tag-independent">🧠 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【詰問原話】</span><span>提問 ＆ 追問</span></div>
+              <blockquote>
+                「四年來，北市都更案件是之前 2.4 倍，也是其他五都加總 1.3 倍。我也要請教，大同區斯文里二期、內湖區<strong>西湖次分區、灣仔次分區涵蓋的 12 個里</strong>，都是危老高密度住宅區，但還是長年無法都更，你知道這麼難推動的原因是什麼嗎？」<br><br>
+                <strong>【追問原話】</strong>：「沈委員，你還真的是不了解市政，非常不熟悉，已讀亂回！我問的實際案例，你都沒有回答。而且提到介入，市府就在做了，<strong>7599 就是達到門檻，政府就介入幫忙試算</strong>，你完全不了解；且<strong>虎林街是第一個 7599 專案，也已經完成公告招商，也已經簽約了</strong>，這些你都不清楚。更重要的，你完全不知道剛剛我提的幾個實際案例，就是因為<strong>松山機場航高限制</strong>，讓都更困難重重！」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【詰問原話】</span><span>回答 ＆ 再回應</span></div>
+              <blockquote>
+                「台北市 30 年以上老宅佔七成，這樣的條件下，數量本來就會比其他縣市多，但是北市沒有核定的，也比其他縣市多，所以不能只秀出漂亮的數據，而是要看都更的入口與出口……都更需要的是動工跟完工。<strong>蔣萬安之前提出的 7599 等等的，現在連動工其實是零，它沒有辦法動工</strong>，那大家在等都更這個心情就會變得越來越焦躁。所以都更對我們來說最重要的其實是陪伴，不能把入口開得那麼寬，但是出口卻那麼窄。」<br><br>
+                <strong>【再回應重點】</strong>：「如果市府明知這些地方長年卡在『松山機場航高限制』，那政府就更應該在計畫一開始就對居民進行充分的資訊說明與揭露，而不是讓民眾在資訊不足下自行摸索，這反而更凸顯市府缺乏主動陪伴機制！」
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">雙方皆誤導：沈用「營建時間差」造假命題；蔣「單一歸因卸責」且前後矛盾</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">蔣點破沈答不出內湖個案，並澄清「虎林街 60 巷」已於 2026/8/11 招商簽約；沈反酸既知航高限制更應事先揭露。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>沈伯洋的時間差騙局</strong>：7599 專案 2023 年才推出，從「整合 → 招商簽約 → 事業及權變計畫審議 → 請照動工」法定程序本就需 <strong>3～5 年以上</strong>。拿剛滿 3 年的前期專案說「動工＝0」，如同批評「懷孕 5 個月生出嬰兒數是 0」。</li>
+                    <li><strong>蔣萬安卸責與自打嘴巴</strong>：① 內湖 12 里老宅推不動，主因除航高外，更是<strong>基地零碎、早期公寓容積率已用滿（改建沒肉）、一樓店面整合難</strong>，全推給松機航高（中央權責）是卸責；② 蔣剛說松機航高是內湖都更死穴，後面卻嘲諷沈提「松機遷建」，邏輯自爆。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://news.ltn.com.tw/news/politics/breakingnews/5624785" target="_blank" rel="noopener">📰 自由時報：都更詰問原話逐字 ↗</a>
+                  <a class="src-pill" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=4D7E11B11A945852" target="_blank" rel="noopener">🏛️ 台北市政府：虎林街60巷7599首案簽約公告 ↗</a>
+                  <a class="src-pill" href="https://thurc.org.taipei/ThurcTaipei/Portal/NewsDetail?id=2500" target="_blank" rel="noopener">🏢 北市住都中心：虎林街公辦都更簽約紀錄 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="case-card" data-target="shen">
+          <div class="case-header">
+            <div class="case-title">爭點 02｜沈控蔣「毒防、兒少會出席率 7%、無菸城市 18 次會議 0 出席」</div>
+            <div>
+              <span class="tag tag-stage">⚡ 場上互打</span>
+              <span class="tag tag-independent">🧠 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【詰問原話】</span><span>提問 ＆ 追問</span></div>
+              <blockquote>
+                「蔣市長在多項重要市政會議出席率偏低甚至未出席：<strong>托育制度管理委員會未出席、毒品防制會報出席率僅 7%、兒少福利促進會出席率僅 7%、寶林茶室專案會議身為召集人卻未出席、『無菸城市』18 次跨局處會議一次都沒有到！</strong>如果這些都不出席的話，要怎麼去領導市政？」<br><br>
+                <strong>【追問原話】</strong>：「我剛剛就一直在想，<strong>蔣市長，你剛剛的回答真的跟我的問題有搭嗎？</strong>你完全沒有回答為什麼例行跟跨局處會議不出席，連法務局長在法規會、訴願會出席率都低，去富邦金控董事會卻全勤，這是不是上樑不正下樑歪？」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【詰問原話】</span><span>回答</span></div>
+              <blockquote>
+                「沈委員，你這是不了解台北市政府的實際運作！面對食安危機或兒童不當對待等重大突發事件，不可能死守定期召開的委員會才開會，身為市長必須即刻召集各局處、親自主持專案會議進行追蹤與列管。例如剴剴案，我就親自主持了 4 次專案會議，並直接與受虐兒家長、幼教團體面對面溝通。<br><br>
+                反倒是沈委員身為立法委員，平時在立法院對於兒虐、毒品、颱風假、教師權益等議題連相關會議都不出席，為什麼選舉到了才突然很關心？」
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">沈伯洋把「副市長代理常規會」與「幕僚工作會」塞進分母，製造數據陷阱</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">蔣僅強調自己有開「剴剴案專案會議」並反咬沈立院缺席，沒解釋制度分工，被沈反酸「回答跟問題有搭嗎」。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>法定委員會慣例</strong>：北市府有數十個法定委員會，歷任市長（扁、馬、郝、柯）例行會議皆採「分層負責」，由督導業務之<strong>副市長代理主持</strong>。</li>
+                    <li><strong>最離譜分母灌水</strong>：「無菸城市 18 次跨局處會議」本質是<strong>局處長／副秘書長層級的幕僚執行小組</strong>，根本不是市長層級會議，拿來算市長出席率 0% 純屬外行湊數。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://news.ltn.com.tw/news/politics/breakingnews/5624798" target="_blank" rel="noopener">📰 自由時報：出席率詰問與「有搭嗎」原話 ↗</a>
+                  <a class="src-pill" href="https://www.taisounds.com/news/content/71/297098" target="_blank" rel="noopener">📰 太報：無菸城市18次會議與剴剴案專案會議交鋒 ↗</a>
+                  <a class="src-pill" href="https://ent.ltn.com.tw/news/breakingnews/5597847" target="_blank" rel="noopener">📰 自由時報：兒少與毒防會7%數據背景與分層負責說明 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="case-card" data-target="chiang">
+          <div class="case-header">
+            <div class="case-title">爭點 03｜蔣萬安宣稱「大巨蛋迎來超過 400 億經濟效益」</div>
+            <div>
+              <span class="tag tag-independent">🧠 100% 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【申論原話】</span><span>政績宣稱</span></div>
+              <blockquote>
+                「四年前，我承諾要在一年內讓大巨蛋完工啟用。今天，大巨蛋已經是全世界頂尖的球場，而且連續三年臺灣大賽就在這裡舉辦，迎來超過四百萬的球迷進場。另外，我們也克服各項的困難，讓大巨蛋舉辦演唱會……大巨蛋更讓東區商圈整個活過來了，所以店面的出租率超過了九成，而且<strong>也迎來超過四百億的經濟效益</strong>。」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【結論原話】</span><span>僅做感性回應</span></div>
+              <blockquote>
+                「我的對手在結辯中，花了不少時間講數據跟經驗，但我要提醒，<strong>這些數字就像溫度計的溫度，但不是體感溫度</strong>。」
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">蔣萬安把「民間消費推估乘數」當成市政收益，掩蓋市府實質分潤極低</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">無。沈伯洋僅稱「數字是溫度計」，未檢驗 400 億算法。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>總經乘數灌水</strong>：400 億是將「入場人次 × 推估門票餐飲旅宿消費 × 乘數效應」算出的<strong>民間商業毛額推估</strong>，並非市庫收入。</li>
+                    <li><strong>實質分潤落差</strong>：受限於大巨蛋 BOT 合約架構，北市府實際向遠雄收取的營收分潤與百億規模差距極大。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://news.ebc.net.tw/news/politics/578365" target="_blank" rel="noopener">📰 東森新聞：蔣萬安申論大巨蛋400億原話 ↗</a>
+                  <a class="src-pill" href="https://www.ettoday.net/news/20261031/3263973.htm" target="_blank" rel="noopener">📰 ETtoday：沈伯洋結辯「溫度計」原話 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="case-card" data-target="chiang">
+          <div class="case-header">
+            <div class="case-title">爭點 04｜蔣稱「拆公館圓環事故降 52%」vs. 辛亥路事故暴增</div>
+            <div>
+              <span class="tag tag-stage">⚡ 場上互打</span>
+              <span class="tag tag-independent">🧠 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【申論與詰問原話要點】</span><span>交通政績</span></div>
+              <blockquote>
+                「我們勇敢做出改革，拍板拆除長期蟬聯肇事熱點第一名的公館圓環並填平地下道、縮短施工期改為正交路口，不僅改善交通，更讓當地<strong>月平均交通事故率大幅降低了 52%（52.3%）</strong>，這就是用科學數據與魄力解決問題。」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【詰問原話要點】</span><span>場上反擊</span></div>
+              <blockquote>
+                「公館圓環拆除後，表面上該路口數字下降，但因為動線改變，大量車流被迫改往鄰近的<strong>辛亥路迴轉</strong>，導致辛亥路也擠進交通事故熱點前十名，根本是<strong>『一個交通事故熱點變成兩個』</strong>，甚至最新統計該區段又重回事故榜首！」
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">蔣萬安「只看單點、不看路網」，隱瞞車流與風險轉移效應</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">沈伯洋當場點破車流被迫改往辛亥路迴轉，「一個熱點變兩個」。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>選擇性截樣偏誤</strong>：2025/9 拆圓環改正交路口後，因限制轉向，單一路口月均事故降 52.3% 雖為真，但交通工程學嚴禁只算單點、不算「周邊影響圈路網總事故」。把迴轉碰撞風險擠去辛亥路卻只報 -52.3%，屬局部美化。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://news.ebc.net.tw/news/politics/578372" target="_blank" rel="noopener">📰 東森新聞：公館圓環「一個熱點變兩個」攻防 ↗</a>
+                  <a class="src-pill" href="https://news.ltn.com.tw/news/politics/breakingnews/5605336" target="_blank" rel="noopener">📰 自由時報：北市交通局「月均事故降52.3%」統計出處 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 -->
+        <article class="case-card" data-target="shen">
+          <div class="case-header">
+            <div class="case-title">爭點 05｜沈伯洋百日政見「取消營養午餐廚餘秤重拍照，還老師時間」</div>
+            <div>
+              <span class="tag tag-independent">🧠 100% 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【申論原話】</span><span>百日三件事之三</span></div>
+              <blockquote>
+                「上任 100 天內要做的第三件事，就是改善營養午餐：立即請議會通過台北市專屬條例以改善品質、隨物價實質補貼，並且<strong>取消廚餘秤重拍照等不合理規定，減輕第一線老師與學校的行政負擔</strong>，把時間還給老師！」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【場上狀態】</span><span>未回應此點</span></div>
+              <blockquote>
+                （蔣萬安僅強調任內實現「國中小營養午餐全面免費、生生喝鮮奶」，未針對「取消廚餘秤重」進行反駁。）
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">沈伯洋搞錯現行作業規定，且「廢除廚餘量化數據」直接打臉自己「AI 數據治市」</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">無。場上完全沒人點破。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>事實錯誤</strong>：廚餘統計源於中央（教育部／環境部）惜食政策，且北市教育局明定<strong>由團膳業者人員負責秤重收運</strong>、午餐秘書登載，並非逼班導師天天拿磅秤拍照。</li>
+                    <li><strong>邏輯自打嘴巴</strong>：想知道「哪家團膳廠商煮最難吃、哪道菜被倒掉最多」，<strong>每日廚餘重量就是最核心的客觀數據</strong>。沈一邊喊 AI 大數據治市，一邊卻要廢除唯一能監督團膳品質的量化指標。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://news.ltn.com.tw/news/politics/breakingnews/5624771" target="_blank" rel="noopener">📰 自由時報：沈伯洋申論「百日三件事」原話 ↗</a>
+                  <a class="src-pill" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=961DD6D9E878AD65" target="_blank" rel="noopener">🏛️ 台北市政府教育局：未設廚餘KPI、由廠商協助秤重澄清稿 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06 -->
+        <article class="case-card" data-target="both">
+          <div class="case-header">
+            <div class="case-title">爭點 06｜蔣「1 分鐘 9 連問」vs. 沈「青鳥救台積電」與雙城論壇回力鏢</div>
+            <div>
+              <span class="tag tag-stage">⚡ 場上互打</span>
+              <span class="tag tag-independent">🧠 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【詰問原話】</span><span>1 分鐘 9 連問</span></div>
+              <blockquote>
+                「<strong>『雙城論壇是滲透的破口』</strong>，這句話是誰說的？<strong>『中國飛彈打過來，對我們有很大的幫助』</strong>，這句話是誰說的？<strong>『普發一萬，是共產黨先窮台、再統一的做法』</strong>，這句話是誰說的？<strong>『要不是青鳥行動，台積電能布局全球嗎？』</strong>、<strong>『我比較吃廢死這一套』</strong>、<strong>『中華民國是類殖民體制，需要制憲解決』</strong>、<strong>『我們今天不能當散財童子，每一個縣市都可以一百億、兩百億』</strong>、五月天歌迷拍自強隧道事件支持獵巫說<strong>『有警覺是好事』</strong>、<strong>『希望以後台北有獨立公投』</strong>——請問這些話是誰說的？」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【詰問原話】</span><span>反酸當立委 ＆ 反咬 2022 原話</span></div>
+              <blockquote>
+                「蔣市長顯然對我的過去非常有興趣，挖了很多十年前、甚至十五年前的一些發文，要一一解釋可能要花許多時間。然而剛提到的幾乎都是中央有關的事項：<strong>如果對普發一萬到修憲體制等有興趣，還是建議你要回來當立法委員，我來當市長，這樣可能比較快點。</strong><br><br>
+                所以針對和市政比較有關的雙城論壇來回答：<strong>『雙城論壇前提是不能因為對方威脅而屈服，在共機擾台這些政治前提下，雙城論壇要再三思』——這句話是誰說的？這是 2022 年蔣萬安說的！</strong>如果自認為是善意交流，最後迎來卻是更大規模軍演，這不是破不破口，這是國防問題。」
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">蔣去脈絡截句且偏離市政；沈機智閃躲，但「青鳥救台積電」等荒謬言論確為近期所言</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">沈點破 9 題有 8 題屬中央職權，並拿蔣 2022 年「共機擾台雙城論壇應三思」原話完美回擊。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>沈伯洋偷換時間</strong>：沈稱是「十幾年前舊文」，但最誇張的<strong>「要不是青鳥行動，台積電能布局全球嗎？」、「普發一萬是中共先窮台再統一」全是近兩年他在立法院講的話</strong>！把台積電全球設廠歸功於青鳥行動，屬極端滑坡謬誤。</li>
+                    <li><strong>蔣萬安斷章取義</strong>：「飛彈打過來很有幫助」原意是談危機感喚醒防衛意識，被蔣惡意去頭去尾。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://news.ltn.com.tw/news/politics/breakingnews/5624815" target="_blank" rel="noopener">📰 自由時報：蔣萬安「9連問」完整清單 ↗</a>
+                  <a class="src-pill" href="https://udn.com/news/story/124652/9848817" target="_blank" rel="noopener">📰 聯合報：沈伯洋反酸當立委與2022雙城論壇原話 ↗</a>
+                  <a class="src-pill" href="https://www.storm.mg/article/11097472" target="_blank" rel="noopener">📰 風傳媒：沈伯洋立院稱「沒有青鳥台積電無法布局全球」出處 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 07 -->
+        <article class="case-card" data-target="chiang">
+          <div class="case-header">
+            <div class="case-title">爭點 07｜蔣描繪「4 年後（2030）的一天：搭乘完工的捷運南北環段」</div>
+            <div>
+              <span class="tag tag-independent">🧠 100% 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【媒體提問原話要點】</span><span>低頭看稿描繪 2030 年</span></div>
+              <blockquote>
+                「四年後的台北早晨，家長因育兒減少工時一小時不減薪……通勤可搭乘無人自駕公車行經北士科輝達星群總部，<strong>捷運萬大線一期及環狀線南北環段完工到位</strong>，長輩搭敬老卡藍色公路遊河、去落成的音圖中心與台北文學館……」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【媒體提問原話要點】</span><span>回應同一題</span></div>
+              <blockquote>
+                「關鍵在於把時間空出來，讓市民生活更悠閒。透過捷運總體檢、重新規劃公車路線與建立通學路網；通勤內科與北士科依賴彈性工時與綠色通勤；推出『家庭一站通』（家長版 1999）與『健身小巴』開進社區。」
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">蔣萬安違反北市捷運局官方工期（南北環最快 2031～2033 後完工），亂開 2030 通車支票</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">無。沈伯洋未抓出工程年份錯誤。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>查核捷運工程局核定時程</strong>：萬大線一期預計 2027 完工（2030 可搭屬實）；但<strong>環狀線南北環段因多次流標，多數區段標 2023～2025 才決標動工，工期 7～8 年，最快 2031～2033 年以後才可能陸續完工</strong>，2030 年絕不可能完工到位。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://www.ettoday.net/news/20261031/3263968.htm" target="_blank" rel="noopener">📰 ETtoday：媒體提問樊啓明原文與雙方回答 ↗</a>
+                  <a class="src-pill" href="https://www.mirrormedia.mg/external/setn_1931304" target="_blank" rel="noopener">📰 鏡週刊/三立：蔣萬安答「四年後早晨（南北環完工）」與低頭看稿 ↗</a>
+                  <a class="src-pill" href="https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1Aldpwlg2LK7?page=2" target="_blank" rel="noopener">🚇 捷運工程局：環狀線南北環段核定工期與2031後完工說明 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 08 -->
+        <article class="case-card" data-target="both">
+          <div class="case-header">
+            <div class="case-title">爭點 08｜蔣「無菸城市近 9 成好評」vs. 沈「一個台北兩個世界」</div>
+            <div>
+              <span class="tag tag-stage">⚡ 場上互打</span>
+              <span class="tag tag-independent">🧠 獨立拆穿</span>
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="quote-box quote-blue">
+              <div class="quote-speaker"><span>🔵 蔣萬安【申論與詰問原話】</span><span>無菸城市 ＆ 食安兒虐</span></div>
+              <blockquote>
+                「我們率先推動無菸城市，落實吸菸與非吸菸空間分流，<strong>獲得市民將近九成的正向評價</strong>。」<br><br>
+                <strong>【詰問反擊】</strong>：「市府面對問題一向公開透明、即刻檢討，建立三方共訪機制、一通報即刻停業。反觀民進黨立委在立法院沒有全力支持加重兒虐刑責，過去民進黨面對毒油等食安事件一路掩護蓋牌，那才是真正的雙重標準！」
+              </blockquote>
+            </div>
+            <div class="quote-box quote-green">
+              <div class="quote-speaker"><span>🟢 沈伯洋【詰問原話】</span><span>質疑雙標</span></div>
+              <blockquote>
+                「<strong>為什麼我們常常會感覺到一個台北是兩個世界？</strong>同樣是兒虐，為什麼有些可以馬上獲得心理諮商，有些沒有辦法，會被一再拖延？是不是要看有沒有民代反映、媒體關心或市長推薦？像成淵國中部食安事件驗出金黃色葡萄球菌、累積多名學生受害，市長卻沒去現場！」
+              </blockquote>
+            </div>
+            <div class="check-panel">
+              <div class="check-row">
+                <span class="check-label">🎯 一句話判定</span>
+                <div><span class="tag tag-verdict">蔣用「理念支持度民調」洗白巷弄二手菸亂象，遇地方缺失習慣拉中央救援</span></div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">⚔️ 場上已點出</span>
+                <div class="check-content">沈點出諮商資源與食安處置落差；蔣拉立院修法與中央過去毒油案反擊。</div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🧠 獨立查證拆穿</span>
+                <div class="check-content">
+                  <ul>
+                    <li><strong>誘導式民調陷阱</strong>：問市民「支不支持無菸分流理念」當然近 9 成支持；但迪化街年貨大街、台北燈節因吸菸區設置不足，吸菸者全溢流進周邊住宅巷弄，拿「理念支持度」當「執行滿意度」是偷換概念。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="check-row">
+                <span class="check-label">🔗 查證出處連結</span>
+                <div class="src-links">
+                  <a class="src-pill" href="https://news.ltn.com.tw/news/politics/breakingnews/5624826" target="_blank" rel="noopener">📰 自由時報：「一個台北兩個世界」兒虐食安交鋒原話 ↗</a>
+                  <a class="src-pill" href="https://news.ebc.net.tw/news/politics/578365" target="_blank" rel="noopener">📰 東森新聞：蔣萬安無菸城市近9成好評原話 ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 9 Questions Table -->
+    <section id="nine-questions">
+      <div class="section-header">
+        <h2>📋 蔣萬安「1 分鐘 9 連問」逐題真偽與脈絡查核表</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>蔣萬安詰問原話</th>
+              <th>查核判定</th>
+              <th>原始脈絡與精簡評論</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>「雙城論壇是滲透的破口」</td>
+              <td><span class="tag tag-green">確有此立場</span></td>
+              <td>沈長期批雙城論壇為統戰破口，參選後改口「可保留交流框架」；但沈當場反咬蔣 2022 也說過「共機擾台應三思」，雙方皆轉彎。</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>「中國飛彈打過來，對我們有很大的幫助」</td>
+              <td><span class="tag tag-stage">蔣斷章取義</span></td>
+              <td>原意為「飛彈越過上空讓民眾驚醒，對提升民防危機意識有幫助」，蔣惡意去頭去尾扭曲成歡迎飛彈。</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>「普發一萬，是共產黨先窮台、再統一的做法」</td>
+              <td><span class="tag tag-verdict">沈確有此言（2025）</span></td>
+              <td>非十年前舊文，而是近期立委發言。將超徵稅收退稅直接扣上中共窮台統戰紅帽，屬無限上綱。</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>「要不是青鳥行動，台積電能布局全球嗎？」</td>
+              <td><span class="tag tag-verdict">沈確有此言（立院）</span></td>
+              <td>沈稱「若無青鳥擋下國會擴權，台積電天天被叫去立院問話無法布局全球」（<a href="https://www.storm.mg/article/11097472" target="_blank" rel="noopener">風傳媒出處 ↗</a>）。將晶圓廠跨國布局歸功街頭運動，嚴重滑坡謬誤。</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>「我比較吃廢死這一套」</td>
+              <td><span class="tag tag-green">沈確有此言（學者期）</span></td>
+              <td>早年刑法學者時期表態，與台北市長職權無關。</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>「中華民國是類殖民體制，需要制憲解決」</td>
+              <td><span class="tag tag-green">沈確有此言（早年）</span></td>
+              <td>早年憲政與轉型正義演講內容，與市政無關。</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>「不能當散財童子，每個縣市都給100億、200億」</td>
+              <td><span class="tag tag-green">沈確有此言（財劃法）</span></td>
+              <td>立院審《財劃法》時反對藍營版下放財源之發言。</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>自強隧道拍五月天事件支持獵巫稱「有警覺是好事」</td>
+              <td><span class="tag tag-verdict">沈確有此言（2025）</span></td>
+              <td>2025 遊客拍自強隧道遭公審疑共諜，沈緩頰稱「有警覺是好事」，引發助長獵巫批評。</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>「希望以後台北有獨立公投」</td>
+              <td><span class="tag tag-stage">十多年前戲謔貼文</span></td>
+              <td>早年網路討論公投法之延伸玩笑，沈藉此題稱「蔣挖十幾年前舊文」，順勢把第 3、4、8 題近期爭議一起閃過。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Full Verbatim Stage Section -->
+    <section id="full-verbatim">
+      <div class="section-header">
+        <h2>🎙️ 申論與結論：完整代表原話對照</h2>
+      </div>
+      <div class="case-body" style="background:var(--surface); border:1px solid var(--border); border-radius:1rem; margin-bottom:1.25rem;">
+        <div class="quote-box quote-green">
+          <div class="quote-speaker">
+            <span>🟢 沈伯洋【第一階段申論原話】</span>
+            <a href="https://news.ltn.com.tw/news/politics/breakingnews/5624771" target="_blank" rel="noopener">📰 自由時報出處 ↗</a>
+          </div>
+          <blockquote>
+            「首先關心蔣市長身體微恙，希望早日康復……聆聽市民的聲音大概是不夠的，蔣市長有提到他對於台北市未來的四個字叫『開創未來』，而我的叫做<strong>『你說，我做』</strong>。我們運用 AI 整理了 1999 專線超過 300 多萬筆資料，並透過『市長你給我聽好了』匿名系統蒐集 7 萬多筆資料；同時舉辦<strong>『市政 Debug 松』，在 24 小時內有 300 多人報名，形成了 34 個創意解決方案</strong>，連 App 都寫好了。<br><br>
+            對我來說，<strong>上任的 100 天能夠做什麼非常清楚：第一，把樹種回來</strong>，不是簡單說樹為什麼被砍掉而已，而是因為這件事產生了人民對政府的不信任，所以提出『專責、專法、專款、專業』推動都市微森林政策；<strong>第二，馬上解決兒虐問題</strong>，只要事實確定，違規機構該停業就停業、該停職就停職，成為第一線社工的後盾；<strong>第三，改善營養午餐</strong>，立即請議會通過台北專屬條例、隨物價補貼，並取消廚餘秤重拍照，減輕老師負擔。先有市民，才會有市長！」
+          </blockquote>
+        </div>
+        <div class="quote-box quote-blue">
+          <div class="quote-speaker">
+            <span>🔵 蔣萬安【第一階段申論原話】</span>
+            <a href="https://news.ebc.net.tw/news/politics/578365" target="_blank" rel="noopener">📰 東森新聞出處 ↗</a>
+          </div>
+          <blockquote>
+            「沈委員，你剛提了很多的問題，也對於市政提出了許多的批評。但是這段時間，很多市民朋友都跟我有一樣的感覺，也就是沈委員，你常常提的是<strong>『歸暝全頭路，天光沒半步』，講了很多空泛的口號，但拿不出具體的做法，講得口沫橫飛，但做起來面目全非</strong>。<br><br>
+            親愛的市民朋友，大家好，我是蔣萬安，逐家好，我是萬安。四年前我說到，四年後我做到。四年前，我承諾要在一年內讓大巨蛋完工啟用。今天，大巨蛋已經是全世界頂尖的球場，迎來超過四百萬球迷進場……大巨蛋更讓東區商圈整個活過來了，店面出租率超過九成，而且<strong>迎來超過四百億的經濟效益</strong>。<br><br>
+            四年前，我還承諾要在基隆河北岸打造科技廊帶。今天，<strong>全球市值第一的輝達，第一個海外總部落腳北士科，超過一萬個高薪職缺，四百億的投資正式扎根臺北</strong>。國際賽、國內賽、地上權，臺北隊關關難過關關過！四年前，我承諾生第一胎補助從兩萬提升到四萬，我做到了；恢復 YouBike 前三十分鐘免費，我做到了；恢復重陽敬老禮金、實現營養午餐免費、生生喝鮮奶，我都做到了！」
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="case-body" style="background:var(--surface); border:1px solid var(--border); border-radius:1rem;">
+        <div class="quote-box quote-blue">
+          <div class="quote-speaker">
+            <span>🔵 蔣萬安【第四階段結論原話】</span>
+            <a href="https://www.taisounds.com/news/content/71/297115" target="_blank" rel="noopener">📰 太報全文出處 ↗</a>
+          </div>
+          <blockquote>
+            「一開始先讓我補充沈委員一直提到東門茄苳樹的問題。這件事情公園處一開始要求移植，但廠商將它移除，所以我們第一時間就對公園處長到廠商都嚴懲，這就是我們的態度。<br><br>
+            經過今天這場辯論會，這場選舉究竟是一次什麼樣的選擇？我認為，<strong>這是一次空想與口號，以及行動與魄力之間的選擇</strong>。當大家想到沈委員，很多人會想到洋流，但他的主張常常天馬行空，連柯文哲市長都不知道沈委員提出的『市民大道要縫合』到底在說什麼。但當講到蔣萬安的時候，連行政院長卓榮泰都會說：輝達、鮮奶、大巨蛋。<br><br>
+            <strong>這更是一場雙重標準以及表裡如一之間的選擇。</strong>我不會在別人舉辦雙城論壇時說是統戰破口，現在卻說願意保留交流框架；我不會過去說比較吃廢死這一套，現在卻說死刑有存在必要；我也不會過去積極推動大罷免，現在卻雲淡風輕說『我沒有發起，我只是贊成』……我或許不是最會講話的人，『我真頇顢講話，但是我真實在』。<br><br>
+            我要鄭重向過去每一位市長表達感謝：黃大洲、陳水扁、馬英九、郝龍斌市長；<strong>我更要感謝柯文哲前市長</strong>，為台北市政打下堅實基礎，不管是大巨蛋、社宅、北士科與財政紀律，四年下來我們減債超過四百億，六都第一。<strong>前幾天我在夜市碰到一位民眾，他焦急跑來跟我說：『看到你被欺負，我們都忍耐很久了。』</strong>我想對所有關心我的朋友說：『沒關係，真的沒關係。』因為相對於個人的委屈，我更在乎的是能為台北做什麼！」
+          </blockquote>
+        </div>
+        <div class="quote-box quote-green">
+          <div class="quote-speaker">
+            <span>🟢 沈伯洋【第四階段結論原話】</span>
+            <a href="https://www.ettoday.net/news/20261031/3263973.htm" target="_blank" rel="noopener">📰 ETtoday 出處 ↗</a>
+          </div>
+          <blockquote>
+            「我的對手在結辯中，花了不少時間講數據跟經驗，但我要提醒，<strong>這些數字就像溫度計的溫度，但不是體感溫度</strong>。很多都更的數據，背後就是苦苦等都更的人；整個辯論過程中，他急著說蔣萬安沒有錯，但我是告訴你，沈伯洋會怎麼做。<br><br>
+            我們希望找回市民眼中失去的光、降低焦慮感，台北不應該沒有跟上台灣整體經濟成長與國際地位提升的腳步。在第四輪詰問時那麼多市政問題蔣市長沒有回答，<strong>有沒有機會我們再約下一次的辯論？如果現在沒有辦法決定，等一下晚一點加 LINE 也可以。</strong>（<a href="https://www.taisounds.com/news/content/71/297116" target="_blank" rel="noopener">太報出處 ↗</a>）<br><br>
+            前幾天一位尊敬的文化人（蔡康永）在節目上講了一句話：<strong>『不用管哪一位候選人贏，要管你有沒有贏，把票投給想要生活方式的時候，就贏了。』</strong>我非常認同這句話，這就是我們在做的事情。我們想要看到市民變成這個城市的主角，我們不做負面攻擊，不講家人，這是想要留給市民的，這城市不應該有人孤單。先有市民，再有市長！」
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complete Source Index Table -->
+    <section id="source-index">
+      <div class="section-header">
+        <h2>🔗 全部查證出處連結總表（官方文件 ＆ 新聞逐字稿）</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>分類</th>
+              <th>查證項目／資料名稱</th>
+              <th>原始網址連結</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>直播原片</strong></td>
+              <td>TVBS NEWS：2026台北市長候選人電視辯論會全程直播</td>
+              <td><a href="https://www.youtube.com/live/j4s2_44yHJE" target="_blank" rel="noopener">https://www.youtube.com/live/j4s2_44yHJE</a></td>
+            </tr>
+            <tr>
+              <td><strong>官方文件</strong></td>
+              <td>台北市政府：信義區虎林街60巷公辦都更（7599專案首案）完成招商簽約新聞稿</td>
+              <td><a href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=4D7E11B11A945852" target="_blank" rel="noopener">https://www.gov.taipei/News_Content.aspx?...4D7E11B11A945852</a></td>
+            </tr>
+            <tr>
+              <td><strong>官方文件</strong></td>
+              <td>台北市住都中心：信義區虎林街公辦都更案簽約公告</td>
+              <td><a href="https://thurc.org.taipei/ThurcTaipei/Portal/NewsDetail?id=2500" target="_blank" rel="noopener">https://thurc.org.taipei/ThurcTaipei/Portal/NewsDetail?id=2500</a></td>
+            </tr>
+            <tr>
+              <td><strong>官方文件</strong></td>
+              <td>台北市政府教育局：澄清未設營養午餐廚餘KPI、由午餐業者協助秤重收運新聞稿</td>
+              <td><a href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=961DD6D9E878AD65" target="_blank" rel="noopener">https://www.gov.taipei/News_Content.aspx?...961DD6D9E878AD65</a></td>
+            </tr>
+            <tr>
+              <td><strong>官方文件</strong></td>
+              <td>捷運工程局：捷運環狀線南北環段工程規劃與 2031 年後完工期程說明</td>
+              <td><a href="https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1Aldpwlg2LK7?page=2" target="_blank" rel="noopener">https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1Aldpwlg2LK7?page=2</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>自由時報：沈伯洋申論「你說我做、1999 AI分析、Debug松、百日三件事」原文</td>
+              <td><a href="https://news.ltn.com.tw/news/politics/breakingnews/5624771" target="_blank" rel="noopener">https://news.ltn.com.tw/news/politics/breakingnews/5624771</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>東森新聞：蔣萬安申論「大巨蛋400億、公館圓環事故降52%、無菸城市近9成好評」原文</td>
+              <td><a href="https://news.ebc.net.tw/news/politics/578365" target="_blank" rel="noopener">https://news.ebc.net.tw/news/politics/578365</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>自由時報：交叉詰問「內湖西湖／灣仔次分區12里、7599動工0、松機航高限制」原文</td>
+              <td><a href="https://news.ltn.com.tw/news/politics/breakingnews/5624785" target="_blank" rel="noopener">https://news.ltn.com.tw/news/politics/breakingnews/5624785</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>自由時報：交叉詰問「毒防7%、兒少7%出席率、你的回答跟我的問題有搭嗎」原文</td>
+              <td><a href="https://news.ltn.com.tw/news/politics/breakingnews/5624798" target="_blank" rel="noopener">https://news.ltn.com.tw/news/politics/breakingnews/5624798</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>太報：交叉詰問「無菸城市18次跨局處會議0出席 vs 剴剴案4次專案會議」原文</td>
+              <td><a href="https://www.taisounds.com/news/content/71/297098" target="_blank" rel="noopener">https://www.taisounds.com/news/content/71/297098</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>自由時報：蔣萬安「1分鐘9連問」完整題目清單</td>
+              <td><a href="https://news.ltn.com.tw/news/politics/breakingnews/5624815" target="_blank" rel="noopener">https://news.ltn.com.tw/news/politics/breakingnews/5624815</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>聯合報：沈伯洋反酸「回來當立法委員」與反咬蔣萬安 2022 雙城論壇原話</td>
+              <td><a href="https://udn.com/news/story/124652/9848817" target="_blank" rel="noopener">https://udn.com/news/story/124652/9848817</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>自由時報：沈伯洋質疑兒虐食安「一個台北兩個世界」原文</td>
+              <td><a href="https://news.ltn.com.tw/news/politics/breakingnews/5624826" target="_blank" rel="noopener">https://news.ltn.com.tw/news/politics/breakingnews/5624826</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>太報：沈伯洋邀再辯一場「晚一點加LINE也可以」原文</td>
+              <td><a href="https://www.taisounds.com/news/content/71/297116" target="_blank" rel="noopener">https://www.taisounds.com/news/content/71/297116</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>ETtoday：媒體提問樊啓明「描繪四年後台北市民的一天」原文與雙方作答</td>
+              <td><a href="https://www.ettoday.net/news/20261031/3263968.htm" target="_blank" rel="noopener">https://www.ettoday.net/news/20261031/3263968.htm</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>鏡週刊／三立：蔣萬安答媒體提問「四年後南北環完工」與頻頻低頭看稿報導</td>
+              <td><a href="https://www.mirrormedia.mg/external/setn_1931304" target="_blank" rel="noopener">https://www.mirrormedia.mg/external/setn_1931304</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>太報：蔣萬安第四階段「結論」完整全文逐字稿</td>
+              <td><a href="https://www.taisounds.com/news/content/71/297115" target="_blank" rel="noopener">https://www.taisounds.com/news/content/71/297115</a></td>
+            </tr>
+            <tr>
+              <td><strong>辯論逐字</strong></td>
+              <td>ETtoday：沈伯洋第四階段「結論（溫度計與體感溫度、蔡康永名言）」原文</td>
+              <td><a href="https://www.ettoday.net/news/20261031/3263973.htm" target="_blank" rel="noopener">https://www.ettoday.net/news/20261031/3263973.htm</a></td>
+            </tr>
+            <tr>
+              <td><strong>歷史查核</strong></td>
+              <td>東森新聞：公館圓環拆除後車流轉移辛亥路「一個熱點變兩個」數據攻防</td>
+              <td><a href="https://news.ebc.net.tw/news/politics/578372" target="_blank" rel="noopener">https://news.ebc.net.tw/news/politics/578372</a></td>
+            </tr>
+            <tr>
+              <td><strong>歷史查核</strong></td>
+              <td>自由時報：北市交通局統計公館圓環改造月均事故下降 52.3%</td>
+              <td><a href="https://news.ltn.com.tw/news/politics/breakingnews/5605336" target="_blank" rel="noopener">https://news.ltn.com.tw/news/politics/breakingnews/5605336</a></td>
+            </tr>
+            <tr>
+              <td><strong>歷史查核</strong></td>
+              <td>風傳媒：沈伯洋立法院發言「若無青鳥行動，台積電哪能布局全球」出處</td>
+              <td><a href="https://www.storm.mg/article/11097472" target="_blank" rel="noopener">https://www.storm.mg/article/11097472</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- AI Review Box -->
+    <section class="ai-box" id="ai-review-zone">
+      <h2>🤖 一鍵複製給其他 AI 交叉評論（含全部出處網址）</h2>
+      <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.6rem;">
+        <button class="btn btn-primary" onclick="copyForAI()">📋 複製「完整原話 ＋ 精簡查核 ＋ 出處網址 Prompt」</button>
+      </div>
+      <textarea id="aiPromptArea" class="prompt-textarea" readonly></textarea>
+    </section>
+  </main>
+
+  <div id="toast" class="toast">✅ 已複製到剪貼簿！</div>
+
+  <script>
+    let currentScale = 1.12;
+    function adjustFont(delta) {
+      currentScale = Math.min(1.6, Math.max(0.85, +(currentScale + delta).toFixed(2)));
+      document.documentElement.style.setProperty('--font-scale', currentScale);
+      localStorage.setItem('taipei_debate_font_scale', currentScale);
+    }
+    function resetFont() {
+      currentScale = 1.05;
+      document.documentElement.style.setProperty('--font-scale', currentScale);
+      localStorage.setItem('taipei_debate_font_scale', currentScale);
+    }
+    const savedScale = localStorage.getItem('taipei_debate_font_scale');
+    if (savedScale) {
+      currentScale = parseFloat(savedScale);
+      document.documentElement.style.setProperty('--font-scale', currentScale);
+    }
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('taipei_debate_theme', next);
+    }
+    const savedTheme = localStorage.getItem('taipei_debate_theme');
+    if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+
+    function filterCases(target, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.case-card').forEach(card => {
+        const t = card.getAttribute('data-target');
+        card.style.display = (target === 'all' || t === target || t === 'both') ? '' : 'none';
+      });
+    }
+
+    const aiReviewPrompt = `請擔任中立事實查核員，審閱以下 2026/10/31「台北市長電視辯論會（蔣萬安 vs. 沈伯洋，YouTube: https://www.youtube.com/live/j4s2_44yHJE ）」之【現場原話】、【第三方查核結論】與【出處連結】，回答：
+1. 雙方誰的數據誤導與邏輯謬誤較嚴重？
+2. 下方【第三方查核結論】是否準確？有無需修正處？
+3. 就「市政能力」與「誠信」給兩人評分（滿分10分）。
+
+=== 一、 現場原話對照與出處 ===
+【爭點1：內湖12里都更 vs 7599動工數】（出處：https://news.ltn.com.tw/news/politics/breakingnews/5624785 ）
+- 蔣萬安：「四年來北市都更案件是之前2.4倍。大同區斯文里二期、內湖區西湖次分區、灣仔次分區12個里長年無法都更，原因為何？」
+- 沈伯洋：「北市30年以上老宅佔七成，沒核定的也比其他縣市多。蔣萬安提出的7599現在連動工其實是零，不能入口開那麼寬、出口那麼窄，最重要是陪伴。」
+- 蔣萬安追問：「你已讀亂回！虎林街是第一個7599專案，已完成公告招商並簽約了（北市府公告：https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=4D7E11B11A945852 ）。更重要的，那幾個案例是因為松山機場航高限制！」
+- 沈伯洋再回應：「既知卡在航高限制，更應一開始對居民充分揭露資訊。」
+
+【爭點2：會議出席率】（出處：https://news.ltn.com.tw/news/politics/breakingnews/5624798 、https://www.taisounds.com/news/content/71/297098 ）
+- 沈伯洋：「蔣在托育委員會未出席、毒防會報出席率7%、兒少促進會7%、寶林案身為召集人未出席、無菸城市18次跨局處會議0出席！怎麼領導市政？」
+- 蔣萬安：「你不了解北市府運作！重大事件不可能等定期委員會，剴剴案我親自主持4次專案會議。反倒沈在立院對兒虐、毒品相關會議都不出席。」
+- 沈伯洋追問：「蔣市長，你剛剛的回答真的跟我的問題有搭嗎？是不是上樑不正下樑歪？」
+
+【爭點3：蔣1分鐘9連問 vs 沈雙城論壇回力鏢】（出處：https://news.ltn.com.tw/news/politics/breakingnews/5624815 、https://udn.com/news/story/124652/9848817 ）
+- 蔣萬安：「『雙城論壇是滲透破口』、『中國飛彈打過來對我們有很大幫助』、『普發一萬是共產黨先窮台再統一』、『要不是青鳥行動，台積電能布局全球嗎？』（出處：https://www.storm.mg/article/11097472 ）、『比較吃廢死這一套』、『中華民國是類殖民體制需制憲』、『不能當散財童子每縣市給一兩百億』、自強隧道事件稱『有警覺是好事』、『希望台北有獨立公投』——誰說的？」
+- 沈伯洋：「挖十幾年前發文，且幾乎都是中央事項，建議你回來當立委，我來當市長比較快。『在共機擾台前提下，雙城論壇要再三思』——這是2022年蔣萬安說的！」
+
+【爭點4：申論、媒體提問與結論原話】
+- 沈伯洋申論（https://news.ltn.com.tw/news/politics/breakingnews/5624771 ）：「AI整理1999超過300萬筆資料，Debug松300多人報名產出34個方案。上任百日三件事：把樹種回來、解決兒虐、改善營養午餐並取消廚餘秤重拍照減輕老師負擔（北市教育局澄清稿：https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&sms=72544237BBE4C5F6&s=961DD6D9E878AD65 ）。」
+- 蔣萬安申論（https://news.ebc.net.tw/news/politics/578365 ）：「沈委員是『歸暝全頭路，天光沒半步』。大巨蛋迎來超過400億經濟效益、輝達首個海外總部落腳北士科、拆公館圓環事故降52%（交通局數據與辛亥路爭議：https://news.ltn.com.tw/news/politics/breakingnews/5605336 、https://news.ebc.net.tw/news/politics/578372 ）、無菸城市近9成正向評價。」
+- 蔣萬安媒體提問描繪4年後即2030年（https://www.mirrormedia.mg/external/setn_1931304 ）：「育兒減工時一小時不減薪、搭無人自駕公車、捷運萬大線一期及環狀線南北環段完工到位（捷運局南北環2031後完工說明：https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1Aldpwlg2LK7?page=2 ）。」
+- 蔣萬安結論（https://www.taisounds.com/news/content/71/297115 ）：「這是雙重標準與表裡如一的選擇。感謝柯文哲打下大巨蛋、社宅、北士科與財政紀律基礎，四年減債超400億。夜市民眾說『看到你被欺負忍很久了』，我說沒關係。」
+- 沈伯洋結論（https://www.ettoday.net/news/20261031/3263973.htm 、https://www.taisounds.com/news/content/71/297116 ）：「這些數字就像溫度計的溫度，但不是體感溫度。有沒有機會約下次辯論？晚一點加LINE也可以。蔡康永說『把票投給想要生活方式的時候，就贏了』。」
+
+=== 二、 第三方查核結論（請審閱） ===
+1. 【查核蔣萬安】：
+   - 大巨蛋400億灌水：屬「人次×周邊消費推估×乘數效應」的民間毛額推估，非市庫分潤。
+   - 公館圓環降52%截樣偏誤：單一路口事故雖降，但迴轉車流溢流至辛亥路使其擠進十大肇事熱點（風險轉移）。
+   - 內湖12里都更卸責且矛盾：推不動主因除航高外，更是基地零碎、早年公寓容積已滿及一樓店面整合難；且蔣既稱松機航高是死穴，卻又嘲諷沈提松機遷建，前後矛盾。
+   - 2030南北環完工支票不實：依捷運局核定工期，南北環最快2031～2033年後才陸續完工，2030年不可能完工。
+   - 無菸城市9成好評：拿「支持無菸理念」民調掩蓋迪化街／燈節吸菸區不足、二手菸溢流住宅巷弄的民怨。
+2. 【查核沈伯洋】：
+   - 7599專案「動工＝0」時間差騙局：7599於2023年推出，首案虎林街60巷已於2026/8簽約；都更從簽約、審議到動工法定期程本就需3～5年以上，拿剛滿3年專案說動工0屬惡意誤導。
+   - 出席率分母灌水：歷任市長委員會例行會議皆由副市長代理；且「無菸城市18次跨局處會議」本就是幕僚工作小組，非市長層級會議。
+   - 取消廚餘秤重打臉數據治市：北市規定由團膳廠商人員秤重收運（非逼導師秤重）；且每日廚餘量是監督哪家團膳最難吃的核心量化數據，廢除與其AI數據治市矛盾。
+   - 「青鳥救台積電」與「普發一萬是中共窮台」：非十年前舊文，而是近兩年立委發言，屬極端滑坡謬誤。`;
+
+    document.getElementById('aiPromptArea').value = aiReviewPrompt;
+
+    function copyForAI() {
+      navigator.clipboard.writeText(aiReviewPrompt).then(() => {
+        const t = document.getElementById('toast');
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 2500);
+      });
+    }
+  </script>
+</body>
+</html>
